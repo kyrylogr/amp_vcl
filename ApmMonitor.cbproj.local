@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.562,C:\Documents and Settings\duts\Мои документы\RAD Studio\Projects\amp\ApmMonitorPCH1.h=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.953,C:\Documents and Settings\duts\Мои документы\RAD Studio\Projects\amp\UnitAmpMonitor.cpp=C:\Documents and Settings\duts\Мои документы\RAD Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.796,=D:\programming\upwork projects\ansergy\amp_vcl\amp_ofstream.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.015,C:\Documents and Settings\duts\Мои документы\RAD Studio\Projects\amp\ApmMonitorPCH1.h=C:\Documents and Settings\duts\Мои документы\RAD Studio\Projects\ApmMonitorPCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.546,C:\Documents and Settings\duts\Мои документы\RAD Studio\Projects\amp\UnitAmpMonitor.cpp=D:\programming\upwork projects\ansergy\amp_vcl\UnitAmpMonitor.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.421,=C:\Documents and Settings\duts\Мои документы\RAD Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.625,=C:\Documents and Settings\duts\Мои документы\RAD Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.078,=C:\Documents and Settings\duts\Мои документы\RAD Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.218,=C:\Documents and Settings\duts\Мои документы\RAD Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.546,C:\Documents and Settings\duts\Мои документы\RAD Studio\Projects\amp\UnitAmpMonitor.h=D:\programming\upwork projects\ansergy\amp_vcl\UnitAmpMonitor.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.656,C:\Documents and Settings\duts\Мои документы\RAD Studio\Projects\ApmMonitorPCH1.h=C:\Documents and Settings\duts\Мои документы\RAD Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.687,C:\Documents and Settings\duts\Мои документы\RAD Studio\Projects\ApmMonitor.cbproj=C:\Documents and Settings\duts\Мои документы\RAD Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.796,C:\Documents and Settings\duts\Мои документы\RAD Studio\Projects\amp\ApmMonitor.cbproj=C:\Documents and Settings\duts\Мои документы\RAD Studio\Projects\ApmMonitor.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.750,C:\Documents and Settings\duts\Мои документы\RAD Studio\Projects\amp\ApmMonitor.cbproj=D:\programming\upwork projects\ansergy\amp_vcl\ApmMonitor.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.500,=D:\programming\upwork projects\ansergy\amp_vcl\amp_utils.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.578,=D:\programming\upwork projects\ansergy\amp_vcl\process_helper.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.953,C:\Documents and Settings\duts\Мои документы\RAD Studio\Projects\amp\UnitAmpMonitor.h=C:\Documents and Settings\duts\Мои документы\RAD Studio\Projects\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.953,C:\Documents and Settings\duts\Мои документы\RAD Studio\Projects\amp\UnitAmpMonitor.dfm=C:\Documents and Settings\duts\Мои документы\RAD Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.546,C:\Documents and Settings\duts\Мои документы\RAD Studio\Projects\amp\UnitAmpMonitor.dfm=D:\programming\upwork projects\ansergy\amp_vcl\UnitAmpMonitor.dfm</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="amp_utils.cpp"/>
+    <File Path="amp_utils.cpp"/>
+    <File Path="amp_utils.h"/>
+    <File Path="ApmMonitor.cpp"/>
+    <File Path="process_helper.cpp"/>
+    <File Path="process_helper.cpp"/>
+    <File Path="process_helper.h"/>
+    <File Path="UnitAmpMonitor.cpp"/>
+    <File Path="UnitAmpMonitor.cpp"/>
+    <File Path="UnitAmpMonitor.dfm"/>
+    <File Path="UnitAmpMonitor.h"/>
+    <File Path="amp_ofstream.cpp"/>
+    <File Path="amp_ofstream.cpp"/>
+    <File Path="amp_ofstream.h"/>
+  </ProjectSortOrder>
+</BorlandProject>

@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{E3ED566E-F26B-4A65-B518-81F0D82927A9}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="amp.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ApmMonitor.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="amp">
+        <MSBuild Projects="amp.cbproj"/>
+    </Target>
+    <Target Name="amp:Clean">
+        <MSBuild Projects="amp.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="amp:Make">
+        <MSBuild Projects="amp.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="ApmMonitor">
+        <MSBuild Projects="ApmMonitor.cbproj"/>
+    </Target>
+    <Target Name="ApmMonitor:Clean">
+        <MSBuild Projects="ApmMonitor.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ApmMonitor:Make">
+        <MSBuild Projects="ApmMonitor.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="amp;ApmMonitor"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="amp:Clean;ApmMonitor:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="amp:Make;ApmMonitor:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,56 @@
+#ifndef __auto_control
+#define __auto_control
+
+/**	Protects original value of a variable - resets its value on block end.
+*/
+
+/** (c) by Kyrylo Gryshko
+* 	kyrylogryshko@gmail.com
+*/
+
+
+
+template<class A> class value_guard {
+public:
+	typedef A store_type;
+private:
+	A& ref;
+	A  old_val;
+
+	//запрещаем
+	value_guard<A>&	operator=(const value_guard<A>&) {};
+	value_guard(const value_guard<A>&) {};
+public:
+	value_guard(A& __ref):
+		ref(__ref), old_val(__ref)
+	{
+	}
+	value_guard(A& __ref, const A& new_val ):
+		ref(__ref), old_val(__ref)
+	{
+		ref = new_val;
+	}
+	value_guard(A& __ref, const A& new_val, const A& __old_val ):
+		ref(__ref), old_val(__old_val)
+	{
+		ref = new_val;
+	}
+
+	~value_guard()
+	{
+		ref = old_val;
+	}
+};
+
+/**	Автовзвод и осовобождение булевого переключателя в границах блока.
+* Не имеет ничего общего с многопоточонстью и синхронизацией.
+* Позволяет иметь информацию о нахождении кода в границах конкретного блока.
+*/
+
+class BoolController: public value_guard<bool>
+{
+public:
+	BoolController(bool &__ref, bool RestoreValue = false): value_guard<bool>(__ref, true, RestoreValue){}
+};
+
+#endif
