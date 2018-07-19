@@ -579,45 +579,12 @@ bool performer::conscious_wait(int iwait, EControlLevel clevel, bool bnotify_log
 			int nTimeDiff = get_diff_seconds(dBegin, Now());
 			if (nTimeDiff>=iwait)
 				break;
-/*			if (nTimeDiff!=nPrevTimeDiff && bnotify_node) {
-				nPrevTimeDiff = nTimeDiff;
-				String smessage = wait_type == enWait ? "waiting " : (wait_type == enRunning ? "running": "");
-				if (wait_type == enWait) {
-					smessage += "["+IntToStr(nTimeDiff)+"/"+IntToStr(iwait)+"]";
-				} else {
-					smessage += "["+IntToStr(nTimeDiff)+"]";
-				}
-	//			notify_nodes_from_level(clevel, true, smessage);
-			}
-*/
 		}
 	} __finally {
 		notify_processing_wait(0);
 	}
 	return true;//	пока таумауты не считаем.
 }
-/*
-void performer::notify_nodes_from_level(EControlLevel clevel, bool bFlag, const String& smessage)
-{
-	if (clevel == levelRun)
-		notify_node(m_current_node_run,   bFlag, m_current_run->name, smessage );
-	if (clevel == levelModel || clevel == levelRun) {
-		if (clevel == levelRun && TreeView && !m_current_node_model ) {
-			m_current_node_model =  node_for_model(m_current_run->parent());
-		}
-		notify_node(m_current_node_model, bFlag,
-					clevel == levelModel ? m_current_model->name : m_current_run->parent().name,
-					smessage );
-	}
-	if (m_current_control) {
-		if (TreeView && !m_current_node_control) {
-			m_current_node_model =  node_for_control();
-		}
-		notify_node(m_current_node_control,   bFlag, m_current_control->def_node_caption(), smessage );
-	}
-}
-*/
-
 
 /**	Add root directory to a file name, if file name does not specify absolute path (with drive or from root folder).
 */
@@ -816,11 +783,6 @@ void performer::common_run_process(run_item& item)
 		notify_node(m_current_node_run, false, item.name, "skipped: " + filterMessage);
 	}
 }
-
-/**
-Access 	OMain
-Excel  	XLMAIN
-*/
 
 void performer::prepare_managed_app()
 {
@@ -1862,14 +1824,6 @@ performer*  performer::get_parent()
 {
 	return m_parent;
 }
-
-/*
-void 		performer::unbind_from_parent()
-{
-	m_parent = NULL;
-	m_root_parent = NULL;
-}
-*/
 
 String		performer::get_log_directory()
 {
