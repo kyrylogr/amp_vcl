@@ -518,11 +518,9 @@ int& 	performer::break_signal_pointer()
 
 void performer::set_parent(performer* _p)
 {
-//	Form = _p->Form;
 	m_parent = _p;
 	set_default_timeout(_p->get_default_timeout());
 	set_default_timeout_complex(_p->get_default_timeout_complex());
-//	MemoLog = _p->MemoLog;
 	set_nested_level(_p->nested_level()+1) ;
 	m_execution_thread = _p->m_execution_thread;
 	if (_p->m_root_parent) {
